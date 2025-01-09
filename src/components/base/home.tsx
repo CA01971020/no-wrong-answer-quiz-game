@@ -1,17 +1,31 @@
 import React, { useEffect, useState } from "react";
 import Header from "./header";
 import Footer from "./footer";
+import ProgressBar from "../ui/progress";
+import Game from "../game";
 
 function Home() {
   const [start, setStart] = useState<boolean>(false);
   useEffect(() => {}, [start]);
-  const clickStartButton = () => {
+  const setStartTrue = () => {
     setStart(true);
+  };
+  const setStartFalse = () => {
+    setStart(false);
   };
   if (start === true) {
     return (
       <div>
         <Header />
+        <button className="absolute left-4 top-12" onClick={setStartFalse}>
+          back
+        </button>
+        <div className="absolute flex w-full justify-center top-20">
+          <ProgressBar />
+        </div>
+        <div className="absolute flex w-full justify-center top-60">
+          <Game />
+        </div>
         <Footer />
       </div>
     );
@@ -23,7 +37,7 @@ function Home() {
         </h2>
         <button
           className=" absolute flex w-full justify-center top-60"
-          onClick={clickStartButton}
+          onClick={setStartTrue}
         >
           start
         </button>
