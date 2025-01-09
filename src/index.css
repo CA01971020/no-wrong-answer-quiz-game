@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p {
+  @apply text-base;
+}
+
+h1 {
+  @apply text-3xl
+    select-none;
+}
+
+h2 {
+  @apply text-2xl
+    select-none;
+}
