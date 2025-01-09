@@ -20,7 +20,7 @@ function Home() {
         <button className="absolute left-4 top-12" onClick={setStartFalse}>
           back
         </button>
-        <div className="absolute flex w-full justify-center top-20">
+        <div className="absolute flex w-full justify-center top-28">
           <ProgressBar />
         </div>
         <div className="absolute flex w-full justify-center top-60">
@@ -31,7 +31,7 @@ function Home() {
     );
   } else
     return (
-      <div className="relative">
+      <div>
         <h2 className="absolute flex w-full justify-center top-40">
           No Wrong Answer Quiz
         </h2>
@@ -41,6 +41,7 @@ function Home() {
         >
           start
         </button>
+        <Footer />
       </div>
     );
 }
