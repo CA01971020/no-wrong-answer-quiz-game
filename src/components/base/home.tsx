@@ -3,12 +3,15 @@ import Header from "./header";
 import Footer from "./footer";
 import ProgressBar from "../ui/progress";
 import Game from "../game";
+import { selectQuestion } from "../game";
 
 function Home() {
   const [start, setStart] = useState<boolean>(false);
+  const [questionData, setQuestionData] = useState(selectQuestion());
   useEffect(() => {}, [start]);
   const setStartTrue = () => {
     setStart(true);
+    setQuestionData(selectQuestion());
   };
   const setStartFalse = () => {
     setStart(false);
@@ -24,7 +27,7 @@ function Home() {
           <ProgressBar />
         </div>
         <div className="absolute flex w-full justify-center top-60">
-          <Game />
+          <Game questionData={questionData} />
         </div>
         <Footer />
       </div>
