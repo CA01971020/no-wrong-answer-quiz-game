@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { q1, q2, q3, q4, q5 } from "./questionData";
+import { useQuestionUpdate } from "./useQuestionUpdate";
 
 let questionDataArray = [q1, q2, q3, q4, q5];
 
@@ -20,11 +21,18 @@ export function selectQuestion() {
   return pushQuestionData;
 }
 
-const trueAlert = () => {
-  alert("正解！");
-};
+function Game({
+  questionData,
+  updateQuestion,
+}: {
+  questionData: string[];
+  updateQuestion: () => void;
+}) {
+  const handleAnswerClick = () => {
+    alert("正解！");
+    updateQuestion(); // 質問データを更新
+  };
 
-function Game({ questionData }: { questionData: string[] }) {
   return (
     <div>
       <p>{questionData[0]}</p>
@@ -32,7 +40,7 @@ function Game({ questionData }: { questionData: string[] }) {
       <ul className="text-center">
         <li className="mt-16">
           <button
-            onClick={trueAlert}
+            onClick={handleAnswerClick}
             className="pr-6 pl-6 pt-2 pb-2 bg-slate-600 rounded-xl text-white"
           >
             {questionData[2]}
@@ -40,7 +48,7 @@ function Game({ questionData }: { questionData: string[] }) {
         </li>
         <li className="mt-8">
           <button
-            onClick={trueAlert}
+            onClick={handleAnswerClick}
             className="pr-6 pl-6 pt-2 pb-2 bg-slate-600 rounded-xl text-white"
           >
             {questionData[3]}
@@ -48,7 +56,7 @@ function Game({ questionData }: { questionData: string[] }) {
         </li>
         <li className="mt-8">
           <button
-            onClick={trueAlert}
+            onClick={handleAnswerClick}
             className="pr-6 pl-6 pt-2 pb-2 bg-slate-600 rounded-xl text-white"
           >
             {questionData[4]}
