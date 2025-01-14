@@ -53,3 +53,48 @@ export let q5: Question = {
   answer2: "自分のじゃないから",
   answer3: "届けないといけないという教育を受けたから",
 };
+
+export let q6: Question = {
+  id: 6,
+  sentence: "1000年後の天気はなに？",
+  question: "",
+  answer1: "快晴",
+  answer2: "曇り",
+  answer3: "大雨",
+};
+
+export let q7: Question = {
+  id: 7,
+  sentence: "この言葉はなに？",
+  question: "〇っ〇ん",
+  answer1: "にっぽん",
+  answer2: "すっぽん",
+  answer3: "けっこん",
+};
+
+export let q8: Question = {
+  id: 8,
+  sentence: "令和7年はどれ？",
+  question: "",
+  answer1: "R7",
+  answer2: "2025年",
+  answer3: "巳年",
+};
+
+export let q9: Question = {
+  id: 9,
+  sentence: "1時はいつ？",
+  question: "",
+  answer1: "午前1時",
+  answer2: "午後1時",
+  answer3: "AM 1時",
+};
+
+export let q10: Question = {
+  id: 10,
+  sentence: "羽テナくんの財布には幾ら入っている？",
+  question: "羽テナくん「1万札が25枚と、1円玉が564536枚あったよ」",
+  answer1: "落としたので0円",
+  answer2: "110円使ったので814,426円",
+  answer3: "814,536円",
+};
