@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "./header";
 import Footer from "./footer";
-import ProgressBar from "../ui/progress";
 import Game from "../game";
 import { selectQuestion } from "../game";
 
@@ -23,9 +22,6 @@ function Home() {
         <button className="absolute left-4 top-12" onClick={setStartFalse}>
           back
         </button>
-        <div className="absolute flex w-full justify-center top-28">
-          <ProgressBar />
-        </div>
         <div className="absolute flex w-full justify-center top-60">
           <Game questionData={questionData} />
         </div>
