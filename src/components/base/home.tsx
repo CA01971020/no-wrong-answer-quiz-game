@@ -22,7 +22,7 @@ function Home() {
         <button className="absolute left-4 top-12" onClick={setStartFalse}>
           back
         </button>
-        <div className="absolute flex w-full justify-center top-60">
+        <div className="absolute flex w-full justify-center top-40">
           <Game questionData={questionData} />
         </div>
         <Footer />
