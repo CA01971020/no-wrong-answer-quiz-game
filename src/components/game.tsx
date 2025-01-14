@@ -27,17 +27,17 @@ function Game({ questionData }: { questionData: string[] }) {
       <p>{questionData[1]}</p>
       <ul className="text-center">
         <li className="mt-8">
-          <button className="pr-6 pl-6 pt-2 pb-2 bg-slate-600 rounded-xl">
+          <button className="pr-6 pl-6 pt-2 pb-2 bg-slate-600 rounded-xl text-white">
             {questionData[2]}
           </button>
         </li>
         <li className="mt-8">
-          <button className="pr-6 pl-6 pt-2 pb-2 bg-slate-600 rounded-xl">
+          <button className="pr-6 pl-6 pt-2 pb-2 bg-slate-600 rounded-xl text-white">
             {questionData[3]}
           </button>
         </li>
         <li className="mt-8">
-          <button className="pr-6 pl-6 pt-2 pb-2 bg-slate-600 rounded-xl">
+          <button className="pr-6 pl-6 pt-2 pb-2 bg-slate-600 rounded-xl text-white">
             {questionData[4]}
           </button>
         </li>
