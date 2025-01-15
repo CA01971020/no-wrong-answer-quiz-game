@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Question {
   id: number;
   sentence: string;

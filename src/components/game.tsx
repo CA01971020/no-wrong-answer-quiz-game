@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
 import { q1, q2, q3, q4, q5, q6, q7, q8, q9, q10 } from "./questionData";
-import { useQuestionUpdate } from "./useQuestionUpdate";
 
 let questionDataArray = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
 
