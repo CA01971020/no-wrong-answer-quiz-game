@@ -33,8 +33,10 @@ function Game({
 
   return (
     <div>
-      <p>{questionData[0]}</p>
-      <p>{questionData[1]}</p>
+      <div className="ml-6 mr-6">
+        <p>{questionData[0]}</p>
+        <p>{questionData[1]}</p>
+      </div>
       <ul className="text-center">
         <li className="mt-16">
           <button
